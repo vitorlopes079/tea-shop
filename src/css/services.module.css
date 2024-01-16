@@ -1,0 +1,41 @@
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2eff1;
+  max-width: 100%;
+  height: auto;
+}
+
+.tagText {
+  margin: 1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #09113a;
+}
+
+@media (min-width: 580px) and (max-width: 680px) {
+  /* Styles for screens between 580px and 680px can be added here */
+}
+
+@media (min-width: 680px) {
+  .servicesContainer {
+    height: 10rem;
+    padding: 0.2rem
+  }
+
+  .tagText {
+    font-size: 2.2rem;
+   margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px){
+  .servicesContainer{
+    height: 8.5rem;
+  }
+  
+}

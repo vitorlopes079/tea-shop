@@ -1,0 +1,147 @@
+.container {
+  background-color: #e2eff1;
+  display: grid;
+  width: 100%;
+  padding: 1.25rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1.25rem;
+  grid-template-areas:
+    "container1 container2"
+    "container1 container3"
+    "container4 container4";
+}
+
+.container1 {
+  grid-area: container1;
+}
+
+.container2 {
+  grid-area: container2;
+}
+
+.container3 {
+  grid-area: container3;
+}
+
+.container4 {
+  grid-area: container4;
+  max-width: 21.875rem;
+}
+
+.list {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.15px;
+  font-size: 1rem;
+  color: #09113a;
+  margin-bottom: 1rem;
+}
+
+.text {
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  color: #09113a;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 525px) {
+  .container {
+    padding: 0.625rem;
+    grid-template-columns: 0.9fr 1fr 1.1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0.3125rem;
+    grid-template-areas:
+      "container1 container2 container4"
+      "container1 container3 container4";
+  }
+
+  .title {
+    letter-spacing: 0;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    letter-spacing: 0;
+    font-size: 0.775rem;
+  }
+}
+
+@media (min-width: 680px) {
+  .container {
+    padding: 1.25rem 1.75rem;
+    grid-template-columns: 1fr 0.7fr 0.9fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.3125rem;
+    grid-template-areas: "container1 container2 container3 container4";
+  }
+
+  .listContainer {
+    display: flex;
+  }
+
+  .list {
+    margin-right: 2.5rem;
+  }
+
+  .title {
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.15px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding: 1.25rem 4.75rem;
+  }
+
+  .container4 {
+    margin-left: 0.5rem;
+  }
+
+  .list {
+    margin-right: 2.5rem;
+  }
+
+  .title {
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.15px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,114 @@
+.collectionContainer {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.875rem 0;
+}
+
+.title {
+  font-family: "Prosto One", cursive, sans-serif;
+  font-size: 1.5rem;
+  color: #09113a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.image {
+  height: 10.75rem;
+  width: 10.75rem;
+  margin-bottom: 1rem;
+}
+
+.imagesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.imageContainer {
+  height: 13rem;
+  width: 10.75rem;
+  margin: 0 0.25rem 1rem 0;
+}
+
+.text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #09113a;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 580px) {
+  .imagesContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 750px) {
+  .imageContainer {
+    height: 17.14rem;
+    width: 14.63rem;
+  }
+
+  .image {
+    height: 14.63rem;
+    width: 14.63rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.63rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageContainer {
+    height: 21.1rem;
+    width: 18rem;
+  }
+
+  .image {
+    height: 18rem;
+    width: 18rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.76rem;
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    font-size: 0.88rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .imageContainer {
+    height: 26.375rem;
+    width: 22.5rem;
+  }
+
+  .image {
+    height: 22.5rem;
+    width: 22.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}

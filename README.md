@@ -1,3 +1,13 @@
+F7F7F7
+CAF0F8
+90E0EF
+5ED2C9
+FFBD52
+FF4769
+00171F
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
