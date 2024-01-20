@@ -27,7 +27,7 @@ The application is built with:
 - **Next.js**: Leveraged for server-side rendering and static web applications.
 - **TypeScript**: Used for its enhanced code quality and readability.
 
-## Adding an Image to the README
+
 
 
 
