@@ -15,10 +15,7 @@ const Hero = () => {
             Every day is unique, just like our tea
           </h1>
           <p className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur. Orci nibh nullam risus
-            adipiscing odio. Neque lacus nibh eros in. Lorem ipsum dolor sit
-            amet consectetur. Orci nibh nullam risus adipiscing odio. Neque
-            lacus nibh eros in.
+          Discover the symphony of flavors in each blend, meticulously crafted for your daily moments of tranquility and refined taste. Each sip offers a unique experience, transforming your day with exceptional teas. Embrace the journey of unparalleled tastes and aromas, elevating every moment with our carefully selected blends.
           </p>
           <button className={styles.button}>BROWES TEA</button>
         </div>
