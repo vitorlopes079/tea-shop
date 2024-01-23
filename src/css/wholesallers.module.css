@@ -8,16 +8,19 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .heroImage {
-  width: 23.8125rem;
-  height: 23.8125rem;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 5px;
 }
 
 .textContainer {
   padding: 1rem;
   margin: 1rem;
+  border-radius: 5px;
 }
 
 .title {
@@ -52,6 +55,7 @@
   line-height: 1.25rem;
   text-transform: uppercase;
   color: #f9f9f9;
+  border-radius: 5px;
 }
 
 @media (min-width: 580px) {
@@ -127,7 +131,6 @@
   .heroContainer {
     justify-content: center;
     align-items: flex-start;
-    
   }
 
   .textContainer {
@@ -163,8 +166,7 @@
   .button {
     height: 2.8rem;
   }
-
-  .textAndButtoncontainer {
+  .textAndButtonContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +183,7 @@
 
   .textContainer {
     padding: 1.875rem;
+    width: 70%;
   }
 
   .heroImageContainer {
@@ -193,19 +196,19 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 2.75rem;
     margin-bottom: 2rem;
   }
 
   .text {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .button {
-    height: 3rem;
+    height: 3.2rem;
     width: 16.4375rem;
   }
 }

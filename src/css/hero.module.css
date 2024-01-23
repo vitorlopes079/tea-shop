@@ -2,22 +2,25 @@
 .heroContainer {
   margin-bottom: 4rem;
   background-color: #f9f9f9;
-  
+
 }
 
 .heroImageContainer {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .heroImage {
-  width: 23.8125rem;
-  height: 23.8125rem;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 5px;
 }
 
 .textContainer {
   margin: 1rem;
+  border-radius: 5px;
 }
 
 .title {
@@ -51,6 +54,7 @@
   cursor: pointer;
   box-shadow: none;
   line-height: 1.25rem;
+  border-radius: 5px;
 }
 
 /* Media queries for screen sizes between 580px and 680px */
@@ -121,7 +125,7 @@
   .heroContainer {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 2.5rem;
   }
 
@@ -129,14 +133,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     padding: 1.5rem;
     box-shadow: 0 0.25rem 0.375rem rgba(94, 94, 94, 0.1);
+    
   }
 
   .heroImageContainer {
     width: auto;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 
   .heroImage {
@@ -171,10 +176,11 @@
 @media (min-width: 1250px) {
   .textContainer {
     padding: 1.875rem;
+    width:70%
   }
 
   .heroImageContainer {
-    margin-left: 3.75rem;
+    margin-left: 3rem;
   }
 
   .heroImage {
@@ -195,6 +201,7 @@
   }
 
   .button {
+    font-size: 1rem;
     height: 3rem;
     width: 16.4375rem;
   }
