@@ -7,6 +7,7 @@ import search from "../../images/navBar/search.svg";
 import closeX from "../../images/navBar/close.svg"
 import Image from "next/image";
 import Logo from "./Logo";
+import BreakLine from "./BreakLine";
 
 type SidebarProps = {
   close: React.MouseEventHandler
@@ -30,7 +31,7 @@ const Sidebar = ({close}: SidebarProps) => {
               <Image src={search} alt="Search" width={20} height={20} />
             </div>
           </div>
-
+         
           <div className={styles.iconContainer}>
             <Image src={user} alt="user-icon" height={24} width={24} />
             <div className={styles.iconTextContainer}>
@@ -47,7 +48,7 @@ const Sidebar = ({close}: SidebarProps) => {
             </div>
           </div>
         </div>
-        <hr className={styles.hr} />
+        <BreakLine />
         <div className={styles.sidebarSection}>
           <Links isMobile={true} />
         </div>

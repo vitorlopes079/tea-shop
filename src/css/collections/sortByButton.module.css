@@ -1,0 +1,27 @@
+.container {
+  display: none;
+}
+
+@media (min-width: 620px) {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0.3125rem 0.625rem; 
+  }
+
+  .text {
+    margin-right: 1.875rem;
+    color: #09113a;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .sortButton {
+    display: flex;
+    align-items: center;
+  }
+}

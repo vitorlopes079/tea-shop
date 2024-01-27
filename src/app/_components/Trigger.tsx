@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import styles from "../../css/sidebar.module.css";
 import Overlay from "./Overlay";
 
+
 const Trigger = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +23,7 @@ const Trigger = () => {
 
   return (
     <>
-      <div onClick={toggleSidebar}>
+      <div onClick={toggleSidebar} style={{ cursor: 'pointer' }}>
         <Image src={trigger} alt={"trigger-icon"} />
       </div>
       <Overlay isOpen={isOpen} onClick={closeSidebar}/>

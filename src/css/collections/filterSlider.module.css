@@ -1,0 +1,22 @@
+.title {
+    font-family: "Prosto One";
+    color: #09113a;
+    padding: 0.625rem 0.938rem; 
+    font-size: 1rem; 
+  }
+  
+  .closeIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Prosto One";
+    color: #09113a;
+    padding: 0.938rem 0.625rem; 
+    cursor: pointer;
+  }
+  
+  .sortContainer,
+  .filtersContainer {
+    padding: 0.625rem 0.3125rem; 
+    color: #09113a;
+  }

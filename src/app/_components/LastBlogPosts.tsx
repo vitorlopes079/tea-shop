@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import blogImage1 from "../../images/blog/homePagePosts.png";
 import blogImage2 from "../../images/blog/homePagePosts2.png";
-import styles from "../../css/lastBlogPosts.module.css";
+import styles from "../../css/homePage/lastBlogPosts.module.css";
 
 const LastBlogPosts = () => {
   return (

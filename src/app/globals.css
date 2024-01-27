@@ -12,5 +12,38 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f9f9f9;
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.customCheckboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.customCheckboxLabel {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+.hiddenCheckbox:checked + .customCheckboxLabel {
+  background-color: pink;
+  border-color: pink;
+}
+
+.customCheckboxLabel:hover {
+  background-color: pink;
 }

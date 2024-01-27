@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../css/collections.module.css";
+import styles from "../../css/homePage/collectionsSection.module.css";
 import Collection1 from "../../images/collection/collection1.png"
 import Collection2 from "../../images/collection/collection2.png";
 import Collection3 from "../../images/collection/collection3.png";

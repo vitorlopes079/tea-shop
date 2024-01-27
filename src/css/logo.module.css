@@ -16,7 +16,7 @@
   color: #09113a;
 }
 
-@media (min-width: 580px) and (max-width: 750px) {
+@media (min-width: 620px) and (max-width: 750px) {
   .logoIcon {
     height: 2.5rem;
     width: 2.5rem;

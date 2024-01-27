@@ -10,11 +10,19 @@
 .link {
   text-decoration: none;
   color: #09113a;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   margin: 0.2rem;
   font-size: 0.875rem;
-  padding-left: 0.75rem;
+  position: relative;
+  transition: background-color 0.2s ease
+
 }
+
+.link:hover {
+  background-color: #e2eff1;
+}
+
+
 
 @media (min-width: 750px) {
   .navLinksContainer {
@@ -23,8 +31,34 @@
   }
 
   .link {
+    padding: 0.2rem 0.5rem;
     font-size: 0.775rem;
-    padding-left: 0;
+    position: relative;
+    transition: color 0.2s;
+    text-align: center;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    color: #09113a;
+    background-color: #09113a;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .link:hover {
+    color: #09113a;
+    background-color: #f9f9f9;
+
+  }
+
+  .link:hover::after {
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -32,11 +66,14 @@
   .link {
     font-size: 0.9rem;
   }
+  .link::after{
+    height: 2px;
+
+  }
 }
 
 @media (min-width: 1250px) {
   .link {
-    padding: 0.75rem;
     margin: 0.5rem;
     font-size: 1.2rem;
   }

@@ -13,7 +13,7 @@ const Links = ({ isMobile }: LinkProps) => {
         isMobile ? styles.navLinksContainerMobile : styles.navLinksContainer
       }
     >
-      <Link href="#" className={styles.link}>
+      <Link href="./collections" className={styles.link}>
         TEA COLLECTIONS
       </Link>
       <Link href="#" className={styles.link}>

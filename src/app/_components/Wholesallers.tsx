@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import wholesallersImage from "../../images/hero/wholsesaleSection.png";
-import styles from "../../css/wholesallers.module.css";
+import styles from "../../css/homePage/wholesallers.module.css";
 
 const Wholesallers = () => {
   return (

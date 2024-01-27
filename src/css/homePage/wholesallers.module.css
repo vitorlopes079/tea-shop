@@ -1,8 +1,7 @@
-/* Base styles */
 .heroContainer {
   margin-bottom: 4rem;
   background-color: #f9f9f9;
-
+  margin-top: 4.5rem;
 }
 
 .heroImageContainer {
@@ -19,6 +18,7 @@
 }
 
 .textContainer {
+  padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
 }
@@ -26,48 +26,59 @@
 .title {
   font-family: "Prosto One", cursive, sans-serif;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
   color: #09113a;
   margin-bottom: 1rem;
 }
 
 .text {
   font-family: Montserrat, cursive, sans-serif;
-  font-weight: lighter;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
+  letter-spacing: 0.25px;
+  margin-bottom: 1rem;
   color: #09113a;
 }
 
 .button {
   height: 2.5rem;
-  width: 10.75rem;
-  margin-top: 1rem;
   padding: 0.625rem 1.5rem;
   font-family: Montserrat, cursive, sans-serif;
-  color: #ffffff;
-  background-color: #e75a7c;
-  border: none;
-  outline: none;
+  background-color: #2c363f;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid #282828;
+  outline: none;
   cursor: pointer;
   box-shadow: none;
   line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #f9f9f9;
   border-radius: 5px;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s; 
 }
 
-/* Media queries for screen sizes between 580px and 680px */
+.button:hover {
+  background-color: #3a424a; 
+  border-color: #3a424a; 
+  transform: scale(1.015); 
+}
+
+.button:active {
+  background-color: #1f272e; 
+  border-color: #1f272e; 
+  transform: scale(0.98); }
+
 @media (min-width: 580px) {
   .heroContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
   }
 
   .heroImage {
-    width: 18.125rem;
-    height: 18.125rem;
+    width: 290px;
+    height: 290px;
   }
 
   .title {
@@ -86,6 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 4rem;
   }
 
   .button {
@@ -95,6 +107,11 @@
 }
 
 @media (min-width: 740px) {
+  .heroContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
   .heroImage {
     width: 22rem;
     height: 22rem;
@@ -118,30 +135,27 @@
 
   .button {
     font-size: 0.8rem;
+    width: 15.15rem;
   }
 }
 
 @media (min-width: 1000px) {
   .heroContainer {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 2.5rem;
+    align-items: flex-start;
   }
 
   .textContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    padding: 1.5rem;
+    width: 80%;
     box-shadow: 0 0.25rem 0.375rem rgba(94, 94, 94, 0.1);
-    
   }
 
   .heroImageContainer {
     width: auto;
-    margin-left: 2rem;
+    margin-right: 3rem;
   }
 
   .heroImage {
@@ -163,10 +177,8 @@
 
   .button {
     height: 2.8rem;
-    width: 13.15rem;
   }
-
-  .textAndButtoncontainer {
+  .textAndButtonContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,35 +186,42 @@
 }
 
 @media (min-width: 1250px) {
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-left: 0;
+  }
+
   .textContainer {
     padding: 1.875rem;
-    width:70%
+    width: 70%;
   }
 
   .heroImageContainer {
-    margin-left: 3rem;
+    margin-right: 3.75rem;
   }
 
   .heroImage {
-    width: 34.25rem;
-    height: 34.25rem;
+    width: 30.25rem;
+    height: 30.25rem;
   }
 
   .title {
-    font-size: 2.6rem;
+    font-size: 2.1rem;
     line-height: 2.75rem;
     margin-bottom: 2rem;
   }
 
   .text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .button {
     font-size: 1rem;
-    height: 3rem;
-    width: 16.4375rem;
+    height: 3.2rem;
+    width: 18.4375rem;
   }
 }

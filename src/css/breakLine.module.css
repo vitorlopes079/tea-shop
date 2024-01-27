@@ -1,0 +1,7 @@
+.hr {
+  margin: 0.5rem auto;
+  width: 70%;
+  border: none; /* Remove default border */
+  height: 1px; /* You can adjust the thickness of the line */
+  background-color: #e75a7c; /* Set the color of the line */
+}
