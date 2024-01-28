@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import wholesallersImage from "../../images/hero/wholsesaleSection.png";
 import styles from "../../css/homePage/wholesallers.module.css";
+import Link from "next/link";
 
 const Wholesallers = () => {
   return (
@@ -22,8 +23,9 @@ const Wholesallers = () => {
             make a sophisticated selection that fits exactly in your kind of
             establishment.
           </p>
-
-          <button className={styles.button}>get a free consultation</button>
+          <Link href={"./construction"}>
+            <button className={styles.button}>get a free consultation</button>
+          </Link>
         </div>
       </div>
     </div>

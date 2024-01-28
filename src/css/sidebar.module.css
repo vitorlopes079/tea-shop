@@ -27,64 +27,9 @@
   height: 100vh;
 }
 
-.iconContainer {
-  display: flex;
-  margin: 1.5rem 0;
-}
-
-.iconTextContainer {
-  margin-left: 0.5rem;
-}
-
 .sidebarSection {
   padding: 1rem;
 }
-
-.searchContainer {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.searchInput {
-  padding: 0.625rem;
-  padding-left: 2.1875rem;
-  font-size: 1rem;
-  border: 0.03125rem solid #09113a;
-  border-radius: 0.25rem;
-  width: 100%;
-  background-color: #f9f9f9;
-  color: #09113a;
-}
-
-.searchInput:focus {
-  outline: none;
-  border: 0.125rem solid #09113a;
-}
-
-.searchInput::placeholder {
-  color: #09113a;
-  opacity: 1;
-}
-
-.searchIcon {
-  position: absolute;
-  left: 0.625rem;
-  pointer-events: none;
-}
-
-.title, .text {
-  font-size: 0.7rem;
-  font-weight: bold;
-  letter-spacing: 0.03125rem;
-  line-height: 1rem;
-  color: #09113a;
-}
-
-.text {
-  font-weight: normal;
-}
-
 
 .logoContainer {
   display: flex;
@@ -92,4 +37,3 @@
   align-items: center;
   margin-bottom: 1rem;
 }
-

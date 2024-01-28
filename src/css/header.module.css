@@ -12,10 +12,6 @@
   width: 100%;
 }
 
-.iconsContainer {
-  display: none;
-}
-
 @media (min-width: 620px) and (max-width: 750px) {
   .header {
     height: 3.5rem;
@@ -34,30 +30,14 @@
     padding: 1rem;
   }
 
-  .iconsContainer {
-    display: flex;
-    align-items: center;
-  }
-
   .hamburguerContainer {
     display: none;
-  }
-
-  .icon {
-    margin: 0.4rem;
-    height: 1.2rem;
-    width: 1.2rem;
   }
 }
 
 @media (min-width: 900px) {
   .header {
     height: 4.5rem;
-  }
-
-  .icon {
-    height: 1.5rem;
-    width: 1.5rem;
   }
 }
 
@@ -67,9 +47,4 @@
     padding: 1.875rem 4.5rem;
   }
 
-  .icon {
-    margin: 1.125rem;
-    height: 1.8rem;
-    width: 1.8rem;
-  }
 }

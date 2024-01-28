@@ -1,0 +1,153 @@
+.categoryContainer {
+  display: none;
+}
+
+.searchIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 0.625rem;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  border: 0.03125rem solid #09113a;
+  border-radius: 0.25rem;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #09113a;
+}
+
+.search::placeholder {
+  color: #09113a;
+  font-weight: 200;
+}
+
+.search:focus {
+  
+  border: 2px solid #09113a; 
+  outline: none; 
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.625rem;
+  pointer-events: none;
+}
+
+.searchIconContainer {
+  height: 2rem;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 55%;
+  left: 0;
+}
+
+@media (min-width: 750px) {
+  .container {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchContainer {
+    border-bottom: 1px solid #e2eff1;
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .categoryContainer {
+    display: flex;
+  }
+
+  .search {
+    all: unset;
+    padding: 0 55px;
+    font-size: 20px;
+    color: #e2eff1;
+  }
+
+  .search::placeholder {
+    color: #e2eff1;
+    font-weight: 200;
+  }
+
+  .searchIconContainer {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 40%;
+    left: 0;
+  }
+
+  .searchIcon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .category {
+    font-size: 0.85rem;
+    margin: 0.4rem 0.4rem;
+    color: #e2eff1;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .category:hover {
+    color: #e75a7c;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 850px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .searchContainer {
+    margin: 0.5rem 0;
+  }
+
+  .search {
+    font-size: 22px;
+  }
+  .category {
+    font-size: 0.9rem;
+    margin: 0.6rem 0.6rem;
+  }
+
+  .searchIcon {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .container {
+    padding: 0 5.4rem;
+  }
+
+  .searchContainer {
+    margin: 0.5rem 0;
+  }
+
+  .search {
+    font-size: 30px;
+  }
+  .category {
+    font-size: 1.2rem;
+    margin: 0.6rem 1rem;
+  }
+
+  .searchIcon {
+    height: 42px;
+    width: 42px;
+  }
+}

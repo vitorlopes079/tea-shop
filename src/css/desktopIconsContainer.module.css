@@ -1,0 +1,62 @@
+.iconsContainer {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .searchContainer {
+    background-color: #09113a;
+    height: 6.8rem;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #e6e5e5;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 25;
+    top: 4rem;
+    left: 0;
+    transition: opacity 0.6s, visibility 0.6s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .icon {
+    margin: 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 900px) {
+  .searchContainer {
+    top: 4.5rem;
+  }
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .searchContainer {
+    top: 5rem;
+  }
+
+  .icon {
+    margin: 1.125rem;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}

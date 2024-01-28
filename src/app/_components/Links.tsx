@@ -13,17 +13,17 @@ const Links = ({ isMobile }: LinkProps) => {
         isMobile ? styles.navLinksContainerMobile : styles.navLinksContainer
       }
     >
+      <Link href="./" className={styles.link}>
+        Home
+      </Link>
       <Link href="./collections" className={styles.link}>
-        TEA COLLECTIONS
+        Tea Collections
       </Link>
-      <Link href="#" className={styles.link}>
-        ACCESSORIES
+      <Link href="./construction" className={styles.link}>
+        Blog
       </Link>
-      <Link href="#" className={styles.link}>
-        BLOG
-      </Link>
-      <Link href="#" className={styles.link}>
-        CONTACT US
+      <Link href="./construction" className={styles.link}>
+        Contact Us
       </Link>
     </div>
   );

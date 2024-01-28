@@ -2,6 +2,7 @@ import React from "react";
 import hero from "../../images/hero/hero.png";
 import Image from "next/image";
 import styles from "../../css/homePage/hero.module.css";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,12 +16,17 @@ const Hero = () => {
             Every day is unique, just like our tea
           </h1>
           <p className={styles.text}>
-          Discover the symphony of flavors in each blend, meticulously crafted for your daily moments of tranquility and refined taste. Each sip offers a unique experience, transforming your day with exceptional teas. Embrace the journey of unparalleled tastes and aromas, elevating every moment with our carefully selected blends.
+            Discover the symphony of flavors in each blend, meticulously crafted
+            for your daily moments of tranquility and refined taste. Each sip
+            offers a unique experience, transforming your day with exceptional
+            teas. Embrace the journey of unparalleled tastes and aromas,
+            elevating every moment with our carefully selected blends.
           </p>
-          <button className={styles.button}>BROWES TEA</button>
+          <Link href={"./construction"}>
+            <button className={styles.button}>BROWES TEA</button>
+          </Link>
         </div>
       </div>
-      
     </div>
   );
 };

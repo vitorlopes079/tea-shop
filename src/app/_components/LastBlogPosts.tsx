@@ -3,12 +3,12 @@ import Image from "next/image";
 import blogImage1 from "../../images/blog/homePagePosts.png";
 import blogImage2 from "../../images/blog/homePagePosts2.png";
 import styles from "../../css/homePage/lastBlogPosts.module.css";
+import Link from "next/link";
 
 const LastBlogPosts = () => {
   return (
     <div className={styles.postsContainer}>
       <h1 className={styles.title}>Last Blogs Posts</h1>
-
 
       <div className={styles.blogssWrapper}>
         <div className={styles.postContainer}>
@@ -49,7 +49,9 @@ const LastBlogPosts = () => {
       </div>
 
       <div className={styles.buttonContainer}>
-        <button className={styles.button}>BROWSE ALL POSTS</button>
+        <Link href={"./construction"}>
+          <button className={styles.button}>BROWSE ALL POSTS</button>
+        </Link>
       </div>
     </div>
   );

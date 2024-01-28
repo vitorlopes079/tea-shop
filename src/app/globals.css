@@ -21,29 +21,10 @@ body {
   flex: 1;
 }
 
-.hiddenCheckbox {
-  display: none;
+
+a{
+  text-decoration: none;
 }
 
-.customCheckboxContainer {
-  display: flex;
-  align-items: center;
-}
 
-.customCheckboxLabel {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border: 2px solid grey;
-  cursor: pointer;
-}
 
-.hiddenCheckbox:checked + .customCheckboxLabel {
-  background-color: pink;
-  border-color: pink;
-}
-
-.customCheckboxLabel:hover {
-  background-color: pink;
-}
