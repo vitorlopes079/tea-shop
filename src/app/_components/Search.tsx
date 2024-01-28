@@ -43,7 +43,7 @@ const Search = () => {
       </div>
       <div className={styles.categoryContainer}>
         {collections.map(item => (
-          <p className={styles.category}>{item}</p>
+          <p className={styles.category} key={item}>{item}</p>
         ))}
       </div>
     </div>
