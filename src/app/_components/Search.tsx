@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from "react";
 import styles from "../../css/search.module.css";
 import searchLight from "../../images/navBar/searchLight.svg";
@@ -5,7 +7,7 @@ import searchDark from "../../images/navBar/search.svg"
 import Image from "next/image";
 
 const Search = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768); 
+  const [isLargeScreen, setIsLargeScreen] = useState(false); 
 
   useEffect(() => {
     const handleResize = () => {
