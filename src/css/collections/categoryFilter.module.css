@@ -66,6 +66,10 @@
   margin-left: 0.5rem;
 }
 
+.selectedCount {
+  color: #e75a7c;
+}
+
 @media (min-width: 580px) {
   .title {
     color: #09113a;

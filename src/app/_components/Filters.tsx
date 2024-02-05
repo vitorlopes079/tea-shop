@@ -1,9 +1,10 @@
-"use client";
+"use client"
 
 import React, { useState } from "react";
 import styles from "../../css/collections/filters.module.css";
 import BreakLine from "./BreakLine";
 import CategoryFilter from "./CategoryFilter";
+import { useFilters } from "@/contexts/FilterContext";
 
 interface FilterSelections {
   collections: { [key: string]: boolean };
@@ -20,15 +21,7 @@ type FiltersProps = {
 };
 
 const Filters = ({ isMobile }: FiltersProps) => {
-  const [filterSelections, setFilterSelections] = useState<FilterSelections>({
-    collections: {},
-    origins: {},
-    flavor: {},
-    qualities: {},
-    caffeine: {},
-    allergens: {},
-    organic: { isTrue: false },
-  });
+  const { filterSelections, setFilterSelections } = useFilters();
 
   const collections = [
     "Black teas",
@@ -65,7 +58,6 @@ const Filters = ({ isMobile }: FiltersProps) => {
   ];
 
   const allergens = ["Lactose-free", "Gluten-free", "Nuts-free ", "Soy-free"];
-
   const handleOptionChange = (
     category: keyof FilterSelections,
     option?: string
@@ -95,6 +87,11 @@ const Filters = ({ isMobile }: FiltersProps) => {
       };
     });
   };
+
+  const countSelectedOptions = (options: { [key: string]: boolean }) => {
+    return Object.values(options).filter(Boolean).length;
+  };
+
   return (
     <div className={isMobile ? styles.mobileContainer : styles.container}>
       <CategoryFilter
@@ -102,6 +99,7 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={collections}
         selectedOptions={filterSelections.collections}
         onOptionChange={(option) => handleOptionChange("collections", option)}
+        selectedCount={countSelectedOptions(filterSelections.collections)}
       />
       <BreakLine />
 
@@ -110,6 +108,8 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={origin}
         selectedOptions={filterSelections.origins}
         onOptionChange={(option) => handleOptionChange("origins", option)}
+        selectedCount={countSelectedOptions(filterSelections.origins)}
+
       />
       <BreakLine />
 
@@ -118,6 +118,8 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={flavor}
         selectedOptions={filterSelections.flavor}
         onOptionChange={(option) => handleOptionChange("flavor", option)}
+        selectedCount={countSelectedOptions(filterSelections.flavor)}
+
       />
       <BreakLine />
 
@@ -126,6 +128,8 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={qualities}
         selectedOptions={filterSelections.qualities}
         onOptionChange={(option) => handleOptionChange("qualities", option)}
+        selectedCount={countSelectedOptions(filterSelections.qualities)}
+
       />
       <BreakLine />
 
@@ -134,6 +138,8 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={caffeine}
         selectedOptions={filterSelections.caffeine}
         onOptionChange={(option) => handleOptionChange("caffeine", option)}
+        selectedCount={countSelectedOptions(filterSelections.caffeine)}
+
       />
       <BreakLine />
 
@@ -142,6 +148,8 @@ const Filters = ({ isMobile }: FiltersProps) => {
         options={allergens}
         selectedOptions={filterSelections.allergens}
         onOptionChange={(option) => handleOptionChange("allergens", option)}
+        selectedCount={countSelectedOptions(filterSelections.allergens)}
+
       />
       <BreakLine />
       <div className={styles.toggleTextContainer}>

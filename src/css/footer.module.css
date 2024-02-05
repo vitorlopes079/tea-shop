@@ -43,12 +43,17 @@
   margin-bottom: 1rem;
 }
 
-.text {
+.link, .text {
   line-height: 1.25rem;
   margin-top: 0.5rem;
   letter-spacing: 0.5px;
   font-size: 0.875rem;
   color: #09113a;
+}
+
+.link:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .iconContainer {
@@ -78,7 +83,7 @@
     margin-bottom: 1rem;
   }
 
-  .text {
+  .link, .text {
     letter-spacing: 0;
     font-size: 0.775rem;
   }
@@ -109,7 +114,7 @@
     margin-bottom: 1rem;
   }
 
-  .text {
+  .link, .text {
     line-height: 1.25rem;
     margin-top: 0.5rem;
     letter-spacing: 0.5px;
@@ -138,7 +143,7 @@
     margin-bottom: 1rem;
   }
 
-  .text {
+  .link, .text {
     line-height: 1.25rem;
     margin-top: 0.5rem;
     letter-spacing: 0.5px;

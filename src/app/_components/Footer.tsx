@@ -1,28 +1,72 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import location from "../../images/contact/location.png";
 import mail from "../../images/contact/mail.png";
 import call from "../../images/contact/call.png";
 import styles from "../../css/footer.module.css";
+import { useFilters } from "@/contexts/FilterContext";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
+  const { applySingleFilter } = useFilters();
+  const router = useRouter();
+
+  const handleClick = (collectionName: string) => {
+    applySingleFilter("collections", collectionName);
+    router.push("/collections"); 
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.container1}>
         <h2 className={styles.title}>Collections</h2>
         <div className={styles.listContainer}>
           <ul className={styles.list}>
-            <li className={styles.text}>Black teas</li>
-            <li className={styles.text}>Green teas</li>
-            <li className={styles.text}>White teas</li>
-            <li className={styles.text}>Herbal teas</li>
-            <li className={styles.text}>Matcha</li>
+            <li
+              className={styles.link}
+              onClick={() => handleClick("Black teas")}
+            >
+              Black teas
+            </li>
+            <li
+              className={styles.link}
+              onClick={() => handleClick("Green teas")}
+            >
+              Green teas
+            </li>
+            <li
+              className={styles.link}
+              onClick={() => handleClick("White teas")}
+            >
+              White teas
+            </li>
+            <li
+              className={styles.link}
+              onClick={() => handleClick("Herbal teas")}
+            >
+              Herbal teas
+            </li>
+            <li className={styles.link} onClick={() => handleClick("Matcha")}>
+              Matcha
+            </li>
           </ul>
           <ul className={styles.list}>
-            <li className={styles.text}>Chai</li>
-            <li className={styles.text}>Oolong</li>
-            <li className={styles.text}> Rooibos</li>
-            <li className={styles.text}>Teaware</li>
+            <li className={styles.link} onClick={() => handleClick("Chai")}>
+              Chai
+            </li>
+            <li className={styles.link} onClick={() => handleClick("Oolong")}>
+              Oolong
+            </li>
+            <li className={styles.link} onClick={() => handleClick("Rooibos")}>
+              {" "}
+              Rooibos
+            </li>
+            <li className={styles.link} onClick={() => handleClick("Teaware")}>
+              Teaware
+            </li>
           </ul>
         </div>
       </div>
@@ -30,18 +74,36 @@ const Footer = () => {
       <div className={styles.container2}>
         <h2 className={styles.title}>Learn</h2>
         <ul className={styles.list}>
-          <li className={styles.text}>About us</li>
-          <li className={styles.text}>About our teas</li>
-          <li className={styles.text}>Tea academy</li>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>About us</li>
+          </Link>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>About our teas</li>
+          </Link>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>Tea academy</li>
+          </Link>
         </ul>
       </div>
 
       <div className={styles.container3}>
         <h2 className={styles.title}>Customer Service</h2>
         <ul className={styles.list}>
-          <li className={styles.text}>Ordering and liayment </li>
-          <li className={styles.text}>Delivery</li>
-          <li className={styles.text}>Terms & Conditions</li>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>Ordering and liayment </li>{" "}
+          </Link>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>Delivery</li>
+          </Link>
+          <Link href={"/construction"}>
+            {" "}
+            <li className={styles.link}>Terms & Conditions</li>
+          </Link>
         </ul>
       </div>
 

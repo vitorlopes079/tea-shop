@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
+import { FilterProvider } from "../../contexts/FilterContext"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main className="content-wrap">{children}</main>
-        <Footer />
+        <FilterProvider>
+          <Header />
+          <main className="content-wrap">{children}</main>
+          <Footer />
+        </FilterProvider>
       </body>
     </html>
   );

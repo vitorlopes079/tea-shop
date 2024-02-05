@@ -1,34 +1,37 @@
 ![Herbal bliss cover](public/HerbalBlissDesktop1.png)
 
-# Tea Shop - Online Store Mockup
+# Tea Shop - Online Store
 
 ## Overview
 
-Welcome to the Tea Shop application mockup. This early-stage project is designed to simulate an online store for teas and related products, focusing on a user-friendly experience and a visually appealing interface.
+Welcome to the Tea Shop application. This project is designed to provide an online store for teas and related products, focusing on a user-friendly experience and a visually appealing interface.
 
 ## Introduction
 
-As a mockup, this project serves as a blueprint for an online tea shop. It is currently in the development phase, concentrating on core structure and layout. The goal is to create a comprehensive online shopping experience that caters to tea enthusiasts.
+This project acts as a blueprint for an online tea shop, currently under development with a focus on core structure and layout. Our goal is to offer a comprehensive online shopping experience that caters to the needs of tea enthusiasts.
 
 ## Features
 
-The home page of the Tea Shop includes key features such as:
+The home page of the Tea Shop showcases several key features, including:
 
 - A visually appealing and welcoming interface.
-- Sections providing detailed information about the tea shop and its products.
-- A showcase area for various tea collections, inviting users to browse.
-- A placeholder for future blog posts related to tea and brewing techniques.
+- Detailed sections about the tea shop and its offerings.
+- A showcase area for various tea collections, inviting users to explore.
+- A section for future blog posts related to tea and brewing techniques.
 - Dedicated areas designed for different customer groups, including a section for wholesale buyers.
+- Advanced filter logic to help users find teas by collections, origin, flavor, caffeine content, allergens, and organic status.
+- Sort logic to arrange products based on different criteria.
+- A "Load More" button to display additional teas when more than 9 options are available.
+- A responsive search function to quickly find specific teas or related information.
+- A mobile menu for easy navigation on handheld devices.
+- Numerous details that enhance the user experience, including animations on hover over links and buttons.
 
 ## Technology Stack
 
 The application is built with:
 
-- **Next.js**: Leveraged for server-side rendering and static web applications.
-- **TypeScript**: Used for its enhanced code quality and readability.
-
-
-
+- **Next.js**: Utilized for server-side rendering and creating static web applications.
+- **TypeScript**: Chosen for its superior code quality and readability.
 
 
 

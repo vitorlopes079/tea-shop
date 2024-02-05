@@ -1,23 +1,33 @@
 import React from "react";
-import productImage from "../../images/collection/CeylonGinger.jpg";
 import Image from "next/image";
 import styles from "../../css/collections/productContainer.module.css";
+import { StaticImageData } from "next/image";
+import Link from "next/link";
 
-const ProductContainer = () => {
+type ProductContainerProps = {
+  image: StaticImageData | string;
+  name: string;
+  price: number;
+  description: string;
+  id: number;
+};
+
+const ProductContainer = ({ image, name, price, id }: ProductContainerProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}>
-        <Image src={productImage} alt="ginger tea" className={styles.image} />
-      </div>
-      <div className={styles.descriptionContainer}>
-        <div className={styles.textContainer}>
-          <p className={styles.text}>Ceylon Ginger</p>
-          <p className={styles.text}>Cinnamon chai tea</p>
+      <Link href={`/${id}`}>
+        <div className={styles.imageContainer}>
+          <Image src={image} alt={name} className={styles.image} />
         </div>
-        <p className={styles.price}>
-          €4.85 <span className={styles.weight}>/ 50 g</span>
-        </p>
-      </div>
+        <div className={styles.descriptionContainer}>
+          <div className={styles.textContainer}>
+            <p className={styles.text}>{name}</p>
+          </div>
+          <p className={styles.price}>
+            €{price} <span className={styles.weight}>/ 50 g</span>
+          </p>
+        </div>
+      </Link>
     </div>
   );
 };

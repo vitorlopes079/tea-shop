@@ -1,0 +1,128 @@
+.container {
+  padding: 0.45rem;
+}
+
+.title {
+  color: #09113a;
+  margin-top: 0.5rem;
+}
+
+.iconAndTextContainer {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.3125rem;
+}
+
+.text,
+.aboutTextContainer {
+  font-size: 0.875rem;
+  color: #09113a;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.aboutSectionContainer,
+.instructionsContainer {
+  padding: 1rem 0;
+}
+
+.about {
+  display: flex;
+}
+
+.aboutTextContainer {
+  margin: 0.1875rem;
+  padding-right: 0.3125rem;
+  margin-top: 0.5rem;
+}
+
+.IngredientsContainer {
+  padding-bottom: 1rem;
+}
+
+.Ingredientstext {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #09113a;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    width: 70%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 680px) {
+  .container {
+    justify-content: space-around;
+    margin-top: 15px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+  .wrapper {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .iconAndTextContainer {
+    margin-top: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 10px;
+    margin-top: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+  .wrapper {
+    width: 45%;
+  }
+
+  .iconAndTextContainer {
+    margin-top: 1.4rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  .wrapper {
+    width: 40%;
+  }
+
+  .iconAndTextContainer {
+    margin-top: 1.4rem;
+  }
+}

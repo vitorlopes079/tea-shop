@@ -1,0 +1,70 @@
+.informationContainer {
+  padding: 1rem;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 12px;
+  color: #09113a;
+  font-size: 24px;
+  font-family: "Prosto One";
+}
+
+.description {
+  color: #09113a;
+  letter-spacing: 0.75px;
+  margin-bottom: 12px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.span {
+  color: #09113a;
+  font-weight: 500;
+}
+
+@media (min-width: 680px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    margin-bottom: 8px;
+  }
+
+  .informationContainer {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+
+  .description {
+    color: #09113a;
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import styles from "../../css/collections/sortDropdown.module.css";
+import { useFilters } from '@/contexts/FilterContext';
+
 
 const SortDropdown = () => {
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const { setSortingOption } = useFilters();
+  const [selectedOption, setSelectedOption] = useState<string | null>(null); // Declare the selectedOption state
+
   const options = ['Lowest Price', 'Highest Price', 'Newest Products', 'Most Popular'];
 
   const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption(e.target.value);
+    const newValue = e.target.value;
+    setSelectedOption(newValue); 
+    setSortingOption(newValue); 
   };
 
   return (

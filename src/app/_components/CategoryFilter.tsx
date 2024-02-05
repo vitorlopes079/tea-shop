@@ -6,6 +6,7 @@ interface GenericFilterProps {
   options: string[];
   selectedOptions: { [key: string]: boolean };
   onOptionChange: (option: string) => void;
+  selectedCount: number;
 }
 
 const CategoryFilter = ({
@@ -13,6 +14,7 @@ const CategoryFilter = ({
   options,
   selectedOptions,
   onOptionChange,
+  selectedCount,
 }: GenericFilterProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +25,9 @@ const CategoryFilter = ({
   return (
     <div className={styles.optionContainer}>
       <div className={styles.buttonContainer}>
-        <p className={styles.title}>{title} (1)</p>
+        <p className={styles.title}>
+          {title} {selectedCount > 0 && <span className={styles.selectedCount}>({selectedCount})</span> }
+        </p>
         <p className={styles.plus} onClick={toggleOpen}>
           {isOpen ? "-" : "+"}
         </p>

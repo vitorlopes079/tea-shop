@@ -1,13 +1,18 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import styles from "../../css/search.module.css";
 import searchLight from "../../images/navBar/searchLight.svg";
-import searchDark from "../../images/navBar/search.svg"
+import searchDark from "../../images/navBar/search.svg";
 import Image from "next/image";
 
-const Search = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(false); 
+type SearchProps = {
+  onClick: (collectionName: string) => void;
+}
+
+const Search = ({onClick}: SearchProps) => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,6 +23,7 @@ const Search = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
 
   const collections = [
     "Black teas",
@@ -40,12 +46,22 @@ const Search = () => {
           placeholder="Search For Our Teas"
         />
         <div className={styles.searchIconContainer}>
-          <Image src={isLargeScreen ? searchLight : searchDark} alt="search" className={styles.searchIcon}/>
+          <Image
+            src={isLargeScreen ? searchLight : searchDark}
+            alt="search"
+            className={styles.searchIcon}
+          />
         </div>
       </div>
       <div className={styles.categoryContainer}>
-        {collections.map(item => (
-          <p className={styles.category} key={item}>{item}</p>
+        {collections.map((item) => (
+          <p
+            className={styles.category}
+            key={item}
+            onClick={() => onClick(item)}
+          >
+            {item}
+          </p>
         ))}
       </div>
     </div>

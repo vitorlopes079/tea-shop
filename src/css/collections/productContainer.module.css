@@ -2,11 +2,14 @@
   width: 8.438rem; 
   height: 14.375rem;
   margin: 0.5rem;
+
 }
 
 .image {
   width: 8.438rem; 
   height: 8.438rem; 
+  border-radius: 5px;
+
 }
 
 .descriptionContainer {
@@ -28,12 +31,14 @@
 
 .price {
   font-weight: 500;
-  color: #09113a;
+
+  color: #e75a7c;
 }
 
 .weight {
   font-weight: 400;
   font-size: 0.75rem; 
+  color: #09113a;
 }
 
 @media (min-width: 400px) {

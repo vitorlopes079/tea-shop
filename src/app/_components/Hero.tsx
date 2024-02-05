@@ -22,7 +22,7 @@ const Hero = () => {
             teas. Embrace the journey of unparalleled tastes and aromas,
             elevating every moment with our carefully selected blends.
           </p>
-          <Link href={"./construction"}>
+          <Link href={"./collections"}>
             <button className={styles.button}>BROWES TEA</button>
           </Link>
         </div>
