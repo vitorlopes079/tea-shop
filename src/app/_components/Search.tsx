@@ -7,12 +7,11 @@ import searchDark from "../../images/navBar/search.svg";
 import Image from "next/image";
 
 type SearchProps = {
-  onClick: (collectionName: string) => void;
-}
+  onClick?: (collectionName: string) => void;
+};
 
-const Search = ({onClick}: SearchProps) => {
+const Search = ({ onClick }: SearchProps) => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,7 +22,6 @@ const Search = ({onClick}: SearchProps) => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   const collections = [
     "Black teas",
@@ -58,7 +56,7 @@ const Search = ({onClick}: SearchProps) => {
           <p
             className={styles.category}
             key={item}
-            onClick={() => onClick(item)}
+            onClick={() => onClick && onClick(item)}
           >
             {item}
           </p>
